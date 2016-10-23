@@ -22,28 +22,4 @@
  * THE SOFTWARE.
  */
 
-class Geom {
-  constructor() {
-    
-  }
-  
-  bind(gl) {
-    const buffer = gl.createBuffer();
-    gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
-    
-    this._buffer = buffer;
-    this._gl = gl;
-  }
-  
-  /**
-   * 
-   * @param {Float32Array}  vert  Vertices list.
-   * @returns {undefined}
-   */
-  setVert(vert) {
-    const gl = this._gl;
-    this._vert = vert;
-    gl.bufferData(gl.ARRAY_BUFFER, vert, gl.STATIC_DRAW);
-    
-  }
-}
+
